@@ -1,8 +1,6 @@
-// miPrueba.test.js
-function sumar(a, b) {
-    return a + b;
-}
+// test.js
+const add = require('./add.js');
 
-test('Suma de 1 + 2 debe ser igual a 3', () => {
-    expect(sumar(1, 2)).toBe(3);
+test('Adds 1 + 2 to equal 3', () => {
+    expect(add(1, 2)).toBe(3);
 });
